@@ -1,0 +1,70 @@
+Build a fully functional eCommerce website using HTML, CSS, and JavaScript only — with fake data and localStorage (no backend required). The site should have all essential features typically found in modern online stores like Amazon or eBay, ensuring a rich user experience and professionalism.
+________________________________________
+🔧 Features to Implement:
+🌐 1. Responsive Layout & UI
+•	Mobile-first design – Fully responsive for phones, tablets, and desktops
+•	Clean, modern UI with smooth navigation
+•	Sticky navbar and consistent footer
+🧭 2. Navbar + Footer
+•	Navbar with links: Home, Shop, Wishlist, Cart, FAQs, Login, Sign Up
+•	Dynamic cart/wishlist icon count in navbar
+•	Footer with links: About, Contact, Social Media, Terms, Privacy Policy
+🏠 3. Home Page
+•	Showcase featured products with images, name, and price
+•	Banner section for promotions or offers
+•	Category-based product sliders (e.g., Electronics, Fashion, etc.)
+•	"Add to Cart" and "Add to Wishlist" buttons on each product card
+🛍️ 4. Product Listing (Shop) Page
+•	Grid or list view of all products
+•	Filter by:
+o	Category (dropdown or checkboxes)
+o	Price range (slider)
+o	Brand
+•	Search bar (live search by name or keyword)
+•	Sorting options (e.g., price low-high, rating, newest)
+🔎 5. Product Detail Page
+•	Full view of selected product:
+o	Image carousel
+o	Name, price, description, category, brand
+o	Ratings & reviews (fake static)
+o	Add to Cart / Wishlist buttons
+•	Related products section
+🛒 6. Cart Page
+•	Show added products with quantity selector
+•	Show price subtotal, shipping (static), total
+•	Update/remove items
+•	Store cart in localStorage
+•	"Proceed to Checkout" button (no actual payment)
+❤️ 7. Wishlist Page
+•	Show all wishlist items from localStorage
+•	Option to move item to cart or remove from wishlist
+👤 8. User Authentication
+•	Sign Up / Sign In forms (save user in localStorage)
+•	Show username in navbar when logged in
+•	Logged-in users retain wishlist/cart
+🔁 9. Persistent State
+•	Use localStorage for:
+o	Cart
+o	Wishlist
+o	User session (current user)
+o	Product data (JSON or hardcoded)
+o	Search/filter history (optional)
+❓ 10. FAQs Page
+•	Collapsible Q&A section using JavaScript
+•	Example questions like shipping, returns, etc.
+📦 11. Order Simulation (Optional)
+•	Fake checkout page (billing/shipping info forms)
+•	Fake order success message with order summary
+•	Store order history in localStorage
+🔐 12. Error Handling & Validation
+•	Validate forms (sign up, login, checkout)
+•	Show alerts/messages for invalid actions (e.g., adding duplicate item)
+________________________________________
+•	Dark Mode Toggle
+•	Product Ratings & Static Reviews
+•	Pagination in product list
+•	Load more button
+•	Price Charts (fake) using Chart.js
+•	Add to Compare Feature
+•	Admin panel (read-only) to view all products/users (optional)
+
