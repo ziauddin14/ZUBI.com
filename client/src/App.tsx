@@ -12,6 +12,9 @@ import { ShopPage } from '@/pages/ShopPage';
 import { CartPage } from '@/pages/CartPage';
 import { WishlistPage } from '@/pages/WishlistPage';
 import { FAQPage } from '@/pages/FAQPage';
+import { PaymentPage } from '@/pages/PaymentPage';
+import { AboutPage } from '@/pages/AboutPage';
+import { ContactPage } from '@/pages/ContactPage';
 import { ProductDetail } from '@/components/product/ProductDetail';
 import { products } from '@/lib/data';
 import NotFound from '@/pages/not-found';
@@ -38,7 +41,7 @@ function Router() {
       
       <main className="flex-1">
         <Switch>
-          <Route path="/" exact>
+          <Route path="/">
             <HomePage onCategoryFilter={handleCategoryFilter} />
           </Route>
           
@@ -73,6 +76,18 @@ function Router() {
           
           <Route path="/faq">
             <FAQPage />
+          </Route>
+          
+          <Route path="/payment">
+            <PaymentPage />
+          </Route>
+          
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          
+          <Route path="/contact">
+            <ContactPage />
           </Route>
           
           <Route component={NotFound} />

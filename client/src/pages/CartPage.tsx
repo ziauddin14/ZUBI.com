@@ -1,34 +1,25 @@
-import { useState } from 'react';
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { useCart } from '@/hooks/useCart';
 import { useAuth } from '@/hooks/useAuth';
 import { Minus, Plus, Trash2, ShoppingCart } from 'lucide-react';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 export function CartPage() {
-  const { cart, removeFromCart, updateQuantity, getTotalPrice, getShipping, getFinalTotal, clearCart } = useCart();
+  const { cart, removeFromCart, updateQuantity, getTotalPrice, getShipping, getFinalTotal } = useCart();
   const { isAuthenticated } = useAuth();
-  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [, setLocation] = useLocation();
 
   const handleCheckout = () => {
     if (!isAuthenticated) {
-      // Handle authentication required
+      // Handle authentication required - could show auth modal or redirect
       return;
     }
 
-    setIsCheckingOut(true);
-    
-    // Simulate checkout process
-    setTimeout(() => {
-      const orderNumber = Math.random().toString(36).substr(2, 9).toUpperCase();
-      clearCart();
-      setIsCheckingOut(false);
-      
-      // In a real app, you'd navigate to an order confirmation page
-      alert(`Order #${orderNumber} placed successfully! Total: $${getFinalTotal().toFixed(2)}`);
-    }, 2000);
+    // Redirect to payment page
+    setLocation('/payment');
   };
 
   if (cart.length === 0) {
@@ -163,9 +154,8 @@ export function CartPage() {
               <Button 
                 className="w-full mb-4"
                 onClick={handleCheckout}
-                disabled={isCheckingOut}
               >
-                {isCheckingOut ? 'Processing...' : 'Proceed to Checkout'}
+                Proceed to Payment
               </Button>
               
               <Link href="/shop">
