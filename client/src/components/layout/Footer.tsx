@@ -1,15 +1,16 @@
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'wouter';
 
 export function Footer() {
   const customerService = [
-    { label: 'Contact Us', href: '#' },
+    { label: 'Contact Us', href: '/contact' },
     { label: 'Help Center', href: '#' },
     { label: 'Returns', href: '#' },
     { label: 'Track Order', href: '#' }
   ];
 
   const company = [
-    { label: 'About Us', href: '#' },
+    { label: 'About Us', href: '/about' },
     { label: 'Careers', href: '#' },
     { label: 'Press', href: '#' },
     { label: 'Blog', href: '#' }
@@ -33,9 +34,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-primary">ShopHub</h3>
+            <h3 className="text-xl font-bold mb-4 text-primary">ZUBI</h3>
             <p className="text-gray-400">
-              Your premier destination for online shopping with the best products and unbeatable prices.
+              ZU Business Industries - Your premier destination for online shopping with the best products and unbeatable prices.
             </p>
           </div>
           
@@ -44,9 +45,17 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               {customerService.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="hover:text-white transition-colors">
-                    {item.label}
-                  </a>
+                  {item.href.startsWith('#') ? (
+                    <a href={item.href} className="hover:text-white transition-colors">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link href={item.href}>
+                      <span className="hover:text-white transition-colors cursor-pointer">
+                        {item.label}
+                      </span>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -57,9 +66,17 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               {company.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="hover:text-white transition-colors">
-                    {item.label}
-                  </a>
+                  {item.href.startsWith('#') ? (
+                    <a href={item.href} className="hover:text-white transition-colors">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link href={item.href}>
+                      <span className="hover:text-white transition-colors cursor-pointer">
+                        {item.label}
+                      </span>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -40,7 +40,8 @@ export function Navbar({ onSearch }: NavbarProps) {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/shop', label: 'Shop' },
-    { path: '/faq', label: 'FAQs' }
+    { path: '/faq', label: 'FAQs' },
+    { path: '/contact', label: 'Contact' }
   ];
 
   return (
@@ -51,7 +52,7 @@ export function Navbar({ onSearch }: NavbarProps) {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <h1 className="text-2xl font-bold text-primary cursor-pointer">ShopHub</h1>
+                <h1 className="text-2xl font-bold text-primary cursor-pointer">ZUBI</h1>
               </Link>
             </div>
 
