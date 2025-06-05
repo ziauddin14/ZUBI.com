@@ -1,0 +1,157 @@
+ Please follow these tasks exactly, without disturbing the existing layout/design/responsiveness:
+🧾 1. Payment Integration Page:
+When user clicks "Proceed to Payment", instead of an alert, open a proper payment form page.
+
+Include fields:
+
+Full Name
+
+Card Number
+
+Expiry Date
+
+CVV
+
+Billing Address
+
+Email
+
+Select Payment Method (Visa, MasterCard, PayPal, Stripe, etc.)
+
+After clicking “Pay Now”, show a confirmation screen + redirect user to a new page:
+
+✅ View Order History Page
+
+Show list of items purchased by the logged-in user
+
+Store orders using localStorage
+
+Show order date, item name, total amount, etc.
+
+📬 2. Contact Us Page:
+Update contact form details as below:
+
+Email: zu37216@gmail.com
+
+Phone: +92 3198998086
+
+Visit Us: House No L-XXX, Korangi No 03, Karachi, Pakistan
+
+📄 3. About Us Page:
+In footer, change “ShopHub” to ZUBI
+
+When user clicks About Us, open a full About Us Page with this content (already provided):
+
+[Use the previous About Us content you wrote for me, with styling and animation]
+
+🔐 4. Add 2 Legal Pages:
+Create 2 new styled pages accessible from footer:
+
+🔹 Privacy Policy
+Add a full privacy policy page for ZUBI with sample policy structure:
+
+What data is collected
+
+How it’s stored
+
+User rights
+
+Cookie usage
+
+LocalStorage disclaimer
+
+🔸 Terms of Service
+Add a full terms of service page:
+
+User responsibilities
+
+Limitations of liability
+
+Acceptable use
+
+Purchase conditions
+
+Legal jurisdiction
+
+✍️ 5. Blog Section:
+Add "Blog" link in navbar and footer
+
+Clicking on Blog should open a new blog page
+
+Include at least 2–3 sample blog posts with:
+
+Title
+
+Date
+
+Author
+
+Content
+
+Image 
+
+Use cards/sections layout and light animation
+
+🛒 6. Product System Enhancement:
+Total number of products: 100
+
+Show only 6 products on home page
+
+ “Start Shopping” or “Shop Now” button to go to full shop page
+
+Shop page must:
+
+Show all 100 products
+
+Have category-based filter (at least 12 categories)
+
+Show only selected category products when clicked
+
+🗂️ 7. Category Fix:
+Current category links on homepage do nothing — fix this:
+
+When a category is clicked (e.g., Electronics, Clothing...), filter and show only that category’s products dynamically
+
+Use JavaScript and localStorage only
+
+🔍 8. Activate Search Bar in Navbar:
+Search should be fully functional
+
+Match typed keyword with product names
+
+If found, show the product(s)
+
+If not found, show a friendly message like:
+❌ “Sorry, this product is currently not available in our store.”
+
+🧱 9. Design/Style/Responsiveness:
+Maintain the current layout/design
+
+Make sure all newly added pages and features are:
+
+Mobile-friendly
+
+Smoothly animated
+
+Stylish and clean
+
+Use same color scheme, shadows, cards, fonts
+
+📌 10. Footer Update:
+Change from: © 2024 ShopHub
+
+To: © 2025 ZU Business Industries
+
+Add links in footer:
+
+About Us
+
+Contact Us
+
+Privacy Policy
+
+Terms of Service
+
+Blog
+
+🎯 Ensure nothing previously working is broken — just add these new features and connect them properly using the same style and responsive design.

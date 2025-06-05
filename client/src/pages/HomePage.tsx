@@ -2,14 +2,35 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ProductCard } from '@/components/product/ProductCard';
 import { products, categories } from '@/lib/data';
-import { Laptop, Shirt, Home, Dumbbell } from 'lucide-react';
+import { 
+  Laptop, 
+  Shirt, 
+  Home, 
+  Dumbbell, 
+  Book, 
+  Heart, 
+  Gamepad2, 
+  Car, 
+  Briefcase, 
+  PawPrint, 
+  Trees, 
+  Diamond 
+} from 'lucide-react';
 import { Link } from 'wouter';
 
 const categoryIcons = {
   laptop: Laptop,
   shirt: Shirt,
   home: Home,
-  dumbbell: Dumbbell
+  dumbbell: Dumbbell,
+  book: Book,
+  heart: Heart,
+  gamepad2: Gamepad2,
+  car: Car,
+  briefcase: Briefcase,
+  pawprint: PawPrint,
+  trees: Trees,
+  diamond: Diamond
 };
 
 interface HomePageProps {
@@ -17,7 +38,7 @@ interface HomePageProps {
 }
 
 export function HomePage({ onCategoryFilter }: HomePageProps) {
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.slice(0, 6);
 
   const handleCategoryClick = (categoryId: string) => {
     onCategoryFilter(categoryId);
